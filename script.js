@@ -45,6 +45,7 @@ const typeController = (e) => {
   if (newLetterCorrect) {
     display.innerHTML += `<span class="green">${newLetter === " " ? "▪" : newLetter}</span>`;
   } else {
+    errorCount++;
     display.innerHTML += `<span class="red">${newLetter === " " ? "▪" : newLetter}</span>`;
   }
 
@@ -108,11 +109,14 @@ const start = () => {
 
   const startCountdown = setInterval(() => {
     countdownOverlay.innerHTML = `<h1>${count}</h1>`;
-
+    // console.log(countdownOverlay)
     // finished timer
     if (count === 0) {
-      countdownOverlay.innerHTML = '';
-      closeModal();
+      countdownOverlay.textContent = '';
+      countdownOverlay.style.backgroundColor = 'rgba(0, 0, 0, 0)';
+      resultModal.classList.add('hidden');
+      modalBackground.classList.add('hidden')
+      // closeModal();
       // -------------- START TYPING -----------------
       document.addEventListener("keydown", typeController);
       countdownOverlay.style.display = "flex";
@@ -137,5 +141,5 @@ setInterval(() => {
   const timeSpent = (currentTime - startTime) / 1000;
 
 
-  document.getElementById("show-time").innerHTML = `${startTime ? timeSpent : 0} seconds`;
+  document.getElementById("show-time").innerHTML = parseInt(`${startTime ? timeSpent : 0} seconds`);
 }, 1000);
