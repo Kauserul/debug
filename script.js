@@ -144,3 +144,8 @@ setInterval(() => {
 
   document.getElementById("show-time").innerHTML = `${parseInt(startTime ? timeSpent : 0)} seconds`;
 }, 1000);
+
+
+window.onkeydown = function(e) { 
+  return !(e.keyCode == 32);
+};
