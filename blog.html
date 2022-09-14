@@ -10,17 +10,31 @@
 
 </head>
 <body>
-    <section class="bg-dark container p-3 mt-5">
-        <h1 class="container mt-5 text-center text-info">Some Common Question</h1>
+    <section class="bg-dark container p-4 mt-5 mb-5 rounded">
+        <h1 class="container mt-3 mb-3 text-center text-info">Some Common Question!!!</h1>
         <hr class="text-white">
         <div class="text-white">
             <div>
                 <h2>1. Difference between local storage and session storage?</h2>
-                <p class="ps-4">sessionStorage is similar to localStorage ; the difference is that while data in localStorage doesn't expire, data in sessionStorage is cleared when the page session ends. Whenever a document is loaded in a particular tab in the browser, a unique page session gets created and assigned to that particular tab.</p>
+                <p class="ps-4">sessionStorage is similar to localStorage ; the difference is that <strong class="text-primary">while data in localStorage doesn't expire, data in sessionStorage is cleared when the page session ends</strong>. Whenever a document is loaded in a particular tab in the browser, a unique page session gets created and assigned to that particular tab.</p>
             </div>
             <div class="mt-5">
                 <h2>2. What is difference between global scope and block scope?</h2>
-                <p class="ps-4">In a browser environment, the global scope is controlled by the window object while in Node. js, it's controlled by the global object. Block scopes are what you get when you use if statements, for statements, and the like.</p>
+                <p class="ps-4">In a browser environment, <strong class="text-primary">the global scope is controlled by the window object while in Node</strong>. js, it's controlled by the global object. Block scopes are what you get when you use if statements, for statements, and the like.</p>
+            </div>
+            <div class="mt-5">
+                <h2>3. How javascript event loop works?</h2>
+                <p class="ps-4">The Event Loop has one simple job — <strong class="text-primary">to monitor the Call Stack and the Callback Queue</strong>. If the Call Stack is empty, the Event Loop will take the first event from the queue and will push it to the Call Stack, which effectively runs it. Such an iteration is called a tick in the Event Loop.</p>
+            </div>
+            <div class="mt-5">
+                <h2>4. JavaScript undefined</h2>
+                <ul>
+                    <li>The undefinedis a primitive type that has a single value <strong class="text-primary">undefined</strong>.</li>
+                    <li>Accessing an uninitialized variable returns <strong class="text-primary">undefined</strong>.</li>
+                    <li>Accessing a non-existing property of an object returns <strong class="text-primary">undefined</strong>.</li>
+                    <li>Accessing a out-of-bounds array element returns <strong class="text-primary">undefined</strong>.</li>
+                    <li>A function without a return statement or with a return statement but without an expression returns <strong class="text-primary">undefined</strong></li>
+                </ul>
             </div>
         </div>
     </section>
