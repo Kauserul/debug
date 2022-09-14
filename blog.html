@@ -7,9 +7,25 @@
     <title>My Blog</title>
     <!-- bootstrap link  -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
-    
+
 </head>
 <body>
-    <h1>Welcome to my blog</h1>
+    <section class="bg-dark container p-3 mt-5">
+        <h1 class="container mt-5 text-center text-info">Some Common Question</h1>
+        <hr class="text-white">
+        <div class="text-white">
+            <div>
+                <h2>1. Difference between local storage and session storage?</h2>
+                <p class="ps-4">sessionStorage is similar to localStorage ; the difference is that while data in localStorage doesn't expire, data in sessionStorage is cleared when the page session ends. Whenever a document is loaded in a particular tab in the browser, a unique page session gets created and assigned to that particular tab.</p>
+            </div>
+            <div class="mt-5">
+                <h2>2. What is difference between global scope and block scope?</h2>
+                <p class="ps-4">In a browser environment, the global scope is controlled by the window object while in Node. js, it's controlled by the global object. Block scopes are what you get when you use if statements, for statements, and the like.</p>
+            </div>
+        </div>
+    </section>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
 </body>
 </html>
