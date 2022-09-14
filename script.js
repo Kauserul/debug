@@ -115,7 +115,8 @@ const start = () => {
       countdownOverlay.textContent = '';
       countdownOverlay.style.backgroundColor = 'rgba(0, 0, 0, 0)';
       resultModal.classList.add('hidden');
-      modalBackground.classList.add('hidden')
+      modalBackground.classList.add('hidden');
+      // display.style.cursor = 'pointer';
       // closeModal();
       // -------------- START TYPING -----------------
       document.addEventListener("keydown", typeController);
@@ -141,5 +142,5 @@ setInterval(() => {
   const timeSpent = (currentTime - startTime) / 1000;
 
 
-  document.getElementById("show-time").innerHTML = parseInt(`${startTime ? timeSpent : 0} seconds`);
+  document.getElementById("show-time").innerHTML = `${parseInt(startTime ? timeSpent : 0)} seconds`;
 }, 1000);
